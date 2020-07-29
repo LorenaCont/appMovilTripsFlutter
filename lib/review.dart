@@ -118,9 +118,6 @@ class Reviews extends StatelessWidget {
         userName,
         userInfo,
         userComment
-
-
-
       ]
     );
 

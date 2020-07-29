@@ -1,27 +1,30 @@
 import 'package:flutter/material.dart';
-import 'description_place.dart';
-import 'header_appbar.dart';
-import 'review_list.dart';
+import 'header_appbar_profile.dart';
+import 'card_photo_profile_list.dart';
 
 
-class HomeTrips extends StatelessWidget {
+class ProfileTrips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-   // throw UnimplementedError();
+  //  throw UnimplementedError();
     return Stack(
       //stack coloca un elemento encima de otro
       children: <Widget>[
+        HeaderAppBarProfile(),
         ListView(
           children: <Widget>[
-            DescriptionPlace(),
-            ReviewList()
+            CardPhotoProfileList(),
           ],
         ),
-        HeaderAppBar()
+
 
       ],
     );
+
+
+
+
   }
-  
+
 }

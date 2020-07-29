@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'description_place.dart';
 import 'review_list.dart';
 import 'header_appbar.dart';
+import 'platzi_trips.dart';
+import 'platzi_trips_cupertino.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle (
@@ -23,31 +25,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-        //appBar: AppBar(
-        //  title: Text("Hola Mundo"),
-       // ),
-        body: Stack(
-          //stack coloca un elemento encima de otro
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace(),
-                ReviewList()
-              ],
-            ),
-            HeaderAppBar()
-
-          ],
-
-
-        )
-
-
-
-
-
-      )
+      home:PlatziTrips()
     );
   }
 }

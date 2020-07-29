@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 
-class GradientBack extends StatelessWidget {
+class GradientProfileBack extends StatelessWidget {
 
-  String title = "Popular";
+  String title = "Perfil";
 
-  GradientBack(this.title);
+  GradientProfileBack(this.title);
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
 
-
-
-
     return Container(
-      height: 250.0,
+      height: 400.0,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
@@ -38,7 +35,7 @@ class GradientBack extends StatelessWidget {
           fontWeight: FontWeight.bold
         ),
       ),
-      alignment: Alignment(-0.9, -0.5),
+      alignment: Alignment(-0.9, -0.6),
 
     );
    // throw UnimplementedError();
